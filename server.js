@@ -25,7 +25,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/procurement', require('./routes/procurement'));
 app.use('/api/maintenance', require('./routes/maintenance'));
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3333;
 db.connect()
     .then(() => app.listen(port, () => console.log(`Server listening on port ${port}`)))
     .catch((err) => console.error(err));
